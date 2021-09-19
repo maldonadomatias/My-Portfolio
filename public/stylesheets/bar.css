@@ -30,10 +30,13 @@
   max-width: 100%;
   /* background-color: #fff; */
   padding: 0px 10px;
-  line-height: 3;
+  /* line-height: 3; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 0.2rem;
 
 }
 .nav-wrapper ul{
@@ -55,7 +58,7 @@ a{
   transition: .3s;
 }
 a:hover{
-  color: #3C9DFB;
+  color: #0D1B2A;
 }
 
 .nav-toogler{

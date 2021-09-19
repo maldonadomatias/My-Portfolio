@@ -73,6 +73,7 @@ label.fcf-label {
 
 
 .fcf-btn {
+
     display: inline-block;
     font-weight: 400;
     color: #212529;
@@ -129,6 +130,7 @@ label.fcf-label {
 .fcf-btn-block {
     display: block;
     width: 100%;
+    font-family: 'Poppins';
 }
 
 .fcf-btn-block+.fcf-btn-block {
