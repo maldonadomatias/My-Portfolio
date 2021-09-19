@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parrillada</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bar.css' />
+    <link rel='stylesheet' href='/stylesheets/form.css' />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+      
+      <div class="nav-wrapper">
+        <nav>
+          <div class="navigation">
+            <ul class="nav-items">
+              <li><a href="https://facebook.com/amaurydiallo"  target="_blank">Home</a></li>
+              <li><a href="https://facebook.com/amaury224" target="_blank">Portfolio</a></li>
+              <li><a href="https://facebook.com/amaurydiallo" target="_blank">About</a></li>
+              <li><a href="https://facebook.com/amaurydiallo" target="_blank" title="+224 06 17 85">Contact</a></li>
+            </ul>
+            <div class="nav-toogler"></div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="title" id="back-to-top">
+        <div class="title-row">
+          <h2>Hola, soy <h2 class="name">Matías Maldonado</h2>.</h2>
+        </div>
+        <h2>Soy un desarrolador web full-stack.</h2>
+      </div>
+    </header> 
+
+    <!-- iMain section -->
+    <main>
+
+      <div class="section--title">
+        <h2>SOBRE MÍ</h2>
+        <hr>
+      </div>
+
+      <section>
+
+        
+        <div class="about--card">
+          <i class="fas fa-mobile-alt"></i>
+          <p class="about--title">Responsive</p>
+          <p class="about--p">Mis layouts funcionan en todos los dispositivos... ya sean grandes o chicos.</p>
+        </div>
+        
+        <div class="about--card">
+          <i class="far fa-lightbulb"></i>
+          <p class="about--title">Intuitivo</p>
+          <p class="about--p">Gran preferencia por facilitar el uso y la experiencia del usuario.</p>
+        </div>
+        
+        
+        <div class="about--card">
+          <i class="fas fa-pen-fancy"></i>
+          <p class="about--title">Detallista</p>
+          <p class="about--p">No presento un trabajo hasta que el más minimo detalle este perfecto.</p>
+        </div>
+        <div class="about--card">
+          <i class="fas fa-rocket"></i>
+          <p class="about--title">Dinámico</p>
+          <p class="about--p">Me gusta poner movimiento en las páginas para que no sean tan estáticas.</p>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="about--img">
+          <img id="molpo" src="/images/molpo.jpg" alt="">
+          <p class="about--title">Who's this guy?</p>
+          <p class="about--p"> Soy un desarrollador web full-stack en Tucumán, Argentina.
+            Tengo una gran pasión por lo que hago, tanto el diseño como el funcionamiento y la experiencia del usuario.</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="back-to-top">
+              <a href="#back-to-top">
+                <i class="fas fa-chevron-up"></i>
+              </a>
+          </div>
+
+
+          
+        <div class="section--title">
+          <h2>CONTÁCTAME</h2>
+          <hr style="background-color: #fff !important;">
+        </div>
+        
+        <div class="footer--list">
+          <article class="footer--section">
+            <div class="footer--text">
+              <ul>
+                  <li>Tienes una pregunta o quieres que trabajemos juntos?</li>
+              </ul>
+            </div>
+
+
+          <div class="fcf-body">
+
+            <div id="fcf-form">
+            <!-- <h3 class="fcf-h3">Contáctame</h3> -->
+
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Ingresa tu nombre:</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Ingresa tu email:</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Ingresa tu mensaje:</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar Mensaje</button>
+                </div>
+
+            </form>
+            </div>
+
+          </div>
+
+          </article>
+
+
+
+
+        </div>
+                <p class="copyright">© 2021 Matías A. Maldonado. All Rights Reserved. Terms, Privacy & Accessibility</p>
+            
+        </footer>
+    </main>
+
+
+    <script src="/javascripts/toggler.js"></script>
+    <script src="/javascripts/navbar.js"></script>
+    
+  </body>
+</html>
