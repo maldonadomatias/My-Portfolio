@@ -57,7 +57,6 @@ select.fcf-form-control[size], select.fcf-form-control[multiple] {
 }
 
 textarea.fcf-form-control {
-    font-family: -apple-system, Arial, sans-serif;
     height: auto;
 }
 
