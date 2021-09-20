@@ -20,15 +20,21 @@
         <nav>
           <div class="navigation">
             <ul class="nav-items">
-              <li><a href="/" >Home</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#about">Sobre Mí</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><button id="cv" class="show-modal">CV</button></li>
               <li><a href="/">Contact</a></li>
             </ul>
             <div class="nav-toogler"></div>
           </div>
         </nav>
       </div>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <img class="cv" src="/images/molpoCv.jpg" alt="">
+      </div>
+      <div class="overlay hidden"></div>
 
       <div class="title" id="back-to-top">
         <div class="title-row animate-right">
@@ -79,7 +85,7 @@
 
       <section>
         <div class="about--img">
-          <img id="molpo" src="/images/molpo.JPG" alt="">
+          <a href="#cv"><img id="molpo" src="/images/molpo.JPG" alt=""></a>
           <p class="about--title">Matías Agustín Maldonado</p>
           <p class="about--p"> Soy un desarrollador web full-stack en Tucumán, Argentina.
             Tengo una gran pasión por lo que hago, tanto así en el diseño como en el funcionamiento, siempre creando la mejor experiencia para el usuario.</p>
@@ -200,10 +206,10 @@
           </article>
 
           <article class="footer--section">
-            <p class="footer--title">Follow Me</p>
             
-                    <ul>
-                        <li class="social"> 
+            <p class="footer--title">Follow Me</p>
+            <ul>
+              <li class="social"> 
                             <a href="https://www.facebook.com/matiasmaldo99/"><i class="fab fa-facebook"></i></a>
                             <a href=""><i class="fab fa-twitter"></i> </a>
                             <a href="https://www.instagram.com/matias.maldonadoo/"><i class="fab fa-instagram"></i> </a>
@@ -223,8 +229,8 @@
 
 
     <script src="/javascripts/toggler.js"></script>
-    <script src="/javascripts/navbar.js"></script>
     <script src="/javascripts/scroll.js"></script>
+    <script src="/javascripts/modal.js"></script>
     
   </body>
 </html>
