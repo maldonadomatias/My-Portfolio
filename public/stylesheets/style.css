@@ -65,7 +65,7 @@ header{
 
 
 .modal {
-    position: relative;
+    position: absolute;
     width: 90%;
     top: 10%;
     left: 5%;
