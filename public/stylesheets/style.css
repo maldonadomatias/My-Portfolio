@@ -321,6 +321,24 @@ footer{
   margin-bottom: 1rem;
 }
 
+.social{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.social i{
+  font-size: 2rem;
+  animation: grow 5s infinite;
+  transition: 0.5s color;
+  cursor: pointer;
+}
+
+.social i:hover{
+  color: #669BBC;
+}
+
 .copyright{
   font-size: 10px;
   font-weight: 200;
@@ -380,4 +398,10 @@ footer{
       opacity: 0;
       transform: translateY(-1rem);
   }
+}
+
+@keyframes grow{
+  0%{transform: scale(1)}
+  50%{transform: scale(1.3)}
+  100%{transform: scale(1)}
 }
