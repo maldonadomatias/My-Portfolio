@@ -175,6 +175,7 @@ section{
 
 .about--p{
   font-size: 14px;
+  max-height: 3rem;
 }
 
 #molpo{
