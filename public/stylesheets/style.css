@@ -391,7 +391,6 @@ footer{
 
 .social i{
   font-size: 2rem;
-  animation: grow 5s infinite;
   transition: 0.5s color;
   cursor: pointer;
   margin: 0px 15px;
@@ -399,6 +398,7 @@ footer{
 
 .social i:hover{
   color: #669BBC;
+  animation: grow 2s ease;
 }
 
 .copyright{
@@ -471,6 +471,5 @@ footer{
 
 @keyframes grow{
   0%{transform: scale(1)}
-  50%{transform: scale(1.3)}
-  100%{transform: scale(1)}
+  100%{transform: scale(1.2)}
 }
