@@ -160,9 +160,6 @@ section{
   color: #0D1B2A;
   font-size: 4rem;
   padding: 5px;
-  /* border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 18.8675px solid #0D1B2A; */
   animation: updown 3s ease infinite;
 }
 
@@ -317,6 +314,21 @@ section{
   color: black;
 }
 
+/* Skills */
+
+.skills{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.skills--img{
+  width: 100px;
+  height: 100px;
+}
+
 
 
 /* Footer */
@@ -431,6 +443,11 @@ footer{
 
   h2{
     font-size: 2rem;
+  }
+
+  .skills--img{
+    width: 200px;
+    height: 200px;
   }
 
   .back-to-top{
