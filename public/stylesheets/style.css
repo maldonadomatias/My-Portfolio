@@ -254,7 +254,7 @@ section{
 }
 
 .card--description{
-  max-height: 2rem;
+  /* max-height: 2rem; */
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
