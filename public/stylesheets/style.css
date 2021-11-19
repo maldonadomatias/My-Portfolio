@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Detalles generales */
 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 a{
@@ -89,7 +91,7 @@ header{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30vh;
+  padding-top: 40vh;
   color: white;
   text-align: center;
 }
@@ -104,7 +106,7 @@ header{
 }
 
 h2{
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 /* Main section */
@@ -140,7 +142,6 @@ section{
 }
 
 .about--card{
-  height: 200px;
   width: 50%;
   padding: 20px;
   display: flex;
@@ -176,8 +177,6 @@ section{
 
 .about--p{
   font-size: 14px;
-  max-height: 3rem;
-  padding: 0px 50px;
 }
 
 #molpo{
@@ -198,7 +197,7 @@ section{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .card--row{
@@ -207,6 +206,7 @@ section{
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  padding: 1rem 0rem 4rem 0;
 }
 
 
@@ -322,28 +322,16 @@ section{
 /* Footer */
 
 footer{
-  margin-top: 4rem;
   background-color: #0D1B2A;
   text-align: center;
   color: #fff;
   padding-bottom: 2rem;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;*/
-  padding: 3rem 0;
+  padding: 1rem 0;
   position: relative;
 }
 
 .back-to-top{
-  width: 7rem;
-  height: 7rem;
-  background-color: #0D1B2A;
-  position: absolute;
-  top: -3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
+  display: none;
 }
 
 .back-to-top i{
@@ -398,7 +386,7 @@ footer{
 
 .social i:hover{
   color: #669BBC;
-  animation: grow 2s ease;
+  animation: grow 2s ease-in-out;
 }
 
 .copyright{
@@ -411,8 +399,21 @@ footer{
 
 /* Responsive */
 
+@media (min-width: 375px){
+  h2{
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 300px){
+  h2{
+    font-size: 1rem;
+  }
+}
+
 
 @media screen and (min-width: 900px) {
+
+  *{overflow-x: inherit;}
 
   h2{
     font-size: 1.5rem;
@@ -430,6 +431,22 @@ footer{
 
   h2{
     font-size: 2rem;
+  }
+
+  .back-to-top{
+    width: 7rem;
+    height: 7rem;
+    background-color: #0D1B2A;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    display: block;
+  }
+
+  footer{
+    padding: 3rem 0;
   }
 }
 
