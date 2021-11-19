@@ -10,6 +10,7 @@
 a{
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 i{
@@ -103,7 +104,7 @@ header{
 }
 
 h2{
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 /* Main section */
@@ -176,6 +177,7 @@ section{
 .about--p{
   font-size: 14px;
   max-height: 3rem;
+  padding: 0px 50px;
 }
 
 #molpo{
@@ -227,9 +229,9 @@ section{
 }
 
 .card img{
-  height: 340px;
+  /* height: 340px; */
   width: 300px;
-  padding: 10px;
+  padding: 40px;
 }
 
 .card--title{
@@ -411,6 +413,10 @@ footer{
 
 
 @media screen and (min-width: 900px) {
+
+  h2{
+    font-size: 1.5rem;
+  }
 
 
   section{
