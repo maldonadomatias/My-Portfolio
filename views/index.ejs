@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matías Maldonado || Portfolio</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel='stylesheet' href='/stylesheets/bar.css' />
-    <link rel='stylesheet' href='/stylesheets/form.css' />
-    <link rel='stylesheet' href='/stylesheets/letterAnimation.css' />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    rel="stylesheet" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
+<%- include("./partials/head")  %> 
   <body>
     <!-- Header and Navbar -->
     <header>
@@ -202,7 +188,7 @@
             <div id="fcf-form">
             <!-- <h3 class="fcf-h3">Contáctame</h3> -->
 
-            <form id="fcf-form-id" class="fcf-form-class" method="POST" action="/">
+            <form id="fcf-form-id" class="fcf-form-class" method="POST" action="/contact">
                 
                 <div class="fcf-form-group">
                     <label for="yourname" class="fcf-label">Enter your Name:</label>
@@ -219,6 +205,13 @@
                 </div>
 
                 <div class="fcf-form-group">
+                    <label for="subject" class="fcf-label">Subject:</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Subject" name="subject" class="fcf-form-control" required>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
                     <label for="yourmessage" class="fcf-label">Enter your Message:</label>
                     <div class="fcf-input-group">
                         <textarea id="Message" name="yourmessage" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
@@ -226,7 +219,7 @@
                 </div>
 
                 <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar Mensaje</button>
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
                 </div>
 
             </form>

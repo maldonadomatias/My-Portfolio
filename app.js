@@ -25,46 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// Nodemailer
 
-async function mainMail(name, email, subject, message) {
-  const transporter = await nodeMail.createTransport({
-    service: "gmail",
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.PASSWORD,
-    },
-  });
-  const mailOption = {
-    from: process.env.GMAIL_USER,
-    to: process.env.EMAIL,
-    subject: subject,
-    html: `You got a message from 
-    Email : ${email}
-    Name: ${name}
-    Message: ${message}`,
-  };
-  try {
-    await transporter.sendMail(mailOption);
-    return Promise.resolve("Message Sent Successfully!");
-  } catch (error) {
-    console.log(error)
-    return Promise.reject(error);
-  }
-}
-
-app.post("/", async (req, res, next) => {
-  const { yourname, youremail, yoursubject, yourmessage } = req.body;
-  try {
-    await mainMail(yourname, youremail, yoursubject, yourmessage);
-    
-    res.send("Message Successfully Sent!");
-  } catch (error) {
-    res.render("error");
-  }
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

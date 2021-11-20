@@ -1,0 +1,41 @@
+<%- include("./partials/head")  %> 
+  <body>
+    <!-- Header and Navbar -->
+    <header>
+      
+      <div class="nav-wrapper">
+        <nav>
+          <div class="navigation">
+            <ul class="nav-items">
+              <li><a href="/">Home</a></li>
+              <li><a href="/#about">About Me</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li><button id="cv" class="show-modal">CV</button></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+            <div class="nav-toogler"></div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <img class="cv" src="/images/molpo_cv.jpg" alt="">
+      </div>
+      <div class="overlay hidden"></div>
+
+      <div class="title" id="back-to-top">
+        <div class="title-row animate-right">
+          <h2>Thanks for reaching out!</h2>
+        </div>
+      </div>
+    </header> 
+
+
+
+    <script src="/javascripts/toggler.js"></script>
+    <script src="/javascripts/scroll.js"></script>
+    <script src="/javascripts/modal.js"></script>
+    
+  </body>
+</html>
