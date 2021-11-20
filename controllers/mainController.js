@@ -14,8 +14,8 @@ const mainController = {
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {
-              user: 'maldonadomatiasagustin@gmail.com', // generated ethereal user
-              pass: 'ctccjntaiodadpzu', // generated ethereal password
+              user: process.env.EMAIL, // generated ethereal user
+              pass: process.env.PASSWORD, // generated ethereal password
             },
           });
         
